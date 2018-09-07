@@ -13,7 +13,8 @@ module.exports = function (gulp, plugins, manifest) {
                         configFile: './node_modules/@startup-palace/pulp-js/.eslintrc',
                     }))
                     .pipe(plugins.eslint.format())
-                    .pipe(plugins.eslint.failAfterError());
+                    // .pipe(plugins.eslint.failAfterError())
+                    ;
             }));
         }
 	});
